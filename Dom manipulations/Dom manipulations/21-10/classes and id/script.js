@@ -7,13 +7,12 @@ console.log(container.classList);
 container.classList.add("box-1");
 
 // to remove the class
-container.classList.remove("box");
+container.classList.remove("box-1");
 
 // to check if class is present or not
 container.classList.contains("active");
 
 function showOptions() {
   // to toggle between classes
-
   container.classList.toggle("active");
 }
