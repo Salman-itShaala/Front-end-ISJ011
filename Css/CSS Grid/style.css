@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+  grid-auto-rows: 200px;
+  gap: 10px;
+}
+
+.child {
+  border: 2px solid blueviolet;
+  background-color: aqua;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.bento-grid {
+  display: grid;
+  /* grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(2, 200px); */
+  /* these above two lines can be reduced to following one line */
+  grid-template: repeat(2, 200px) / repeat(2, 200px);
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+  background: black;
+  height: 100vh;
+}
+
+.bento-child-1 {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+}
+
+.bento-child-2 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.bento-child-3 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.bento-child-1,
+.bento-child-2,
+.bento-child-3 {
+  background-color: aqua;
+  border: 2px solid white;
+  border-radius: 10px;
+}

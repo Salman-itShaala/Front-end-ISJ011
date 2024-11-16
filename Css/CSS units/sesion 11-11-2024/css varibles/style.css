@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html.light{
+    --primary-text-color : black;
+    --primary-bg-color : white;
+}
+
+html.dark{
+    --primary-text-color: white;
+    --primary-bg-color: black;
+}
+
+
+@media(prefers-color-scheme: dark){
+    :root{
+        /* styles/ css varibles for dark theme */
+    }
+}
+
+.container{
+    width: min(400px, 50vw);
+    height: calc(10px + 400px);
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    --primary-font-size : 20px;
+}
+
+

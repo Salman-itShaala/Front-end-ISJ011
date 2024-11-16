@@ -1,0 +1,73 @@
+/* descendant selector */
+.parent h1 {
+  background-color: blueviolet;
+}
+
+/* child selector */
+.parent > h1 {
+  background-color: red;
+}
+
+.child-1 + .child-2 {
+  background-color: chartreuse;
+  height: 50vh;
+}
+
+.sibling-1 ~ .sibling-2 {
+}
+
+/* psuedo selectors */
+
+ul li:hover {
+  background-color: aquamarine;
+}
+
+ul li:first-child {
+  color: blue;
+}
+
+ul li:last-child {
+  color: brown;
+}
+
+ul li:nth-child(2n) {
+  background: #939393;
+}
+
+a {
+  color: crimson;
+  position: relative;
+}
+
+a:visited {
+  color: green;
+}
+
+a::before {
+  content: "😀";
+  background-color: blueviolet;
+  position: absolute;
+  top: -8px;
+  right: -20px;
+  padding: 2px;
+  font-size: 8px;
+  border-radius: 2px;
+}
+
+p::selection {
+  background-color: green;
+}
+
+p::before {
+  content: "Hiii";
+}
+
+p::after {
+  content: "bye";
+}
+
+/* attribute selector */
+
+a[href="/home"] {
+  color: chocolate;
+}

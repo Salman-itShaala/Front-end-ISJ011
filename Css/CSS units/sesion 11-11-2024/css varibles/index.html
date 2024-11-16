@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html id="root-element" class="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS units</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      I'm in parent div
+      <br />
+      <br />
+      <button onclick="changeTheme()">Change theme</button>
+    </div>
+
+    <script>
+      const rootElement = document.getElementById("root-element");
+      function changeTheme() {
+        rootElement.classList.toggle("dark");
+      }
+    </script>
+  </body>
+</html>
